@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-black text-white">
+    <!-- Header/Navigation -->
+    <header class="relative">
+        <nav class="flex items-center justify-between px-8 py-4 absolute w-full z-50">
+            <div class="flex items-center">
+                <img src="../assets/netflix logo svg.svg" alt="Netflix" class="w-32">
+            </div>
+            <div class="flex items-center space-x-4">
+                <select class="bg-transparent border px-4 py-1 rounded-md">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+                <button class="bg-red-600 px-4 py-1 rounded-md hover:bg-red-700">Sign In</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="relative h-screen">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black z-10"></div>
+            <div class="absolute inset-0 bg-[url('../assets/bgimg.jpg')] bg-cover bg-center"></div>
+            <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-4">
+                <h1 class="text-5xl font-bold mb-4">Unlimited movies, TV shows and more</h1>
+                <p class="text-2xl mb-6">Starts at $7.99. Cancel at any time.</p>
+                <p class="text-xl mb-8">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="flex flex-col sm:flex-row gap-4 w-full max-w-2xl">
+                    <input type="email" placeholder="Email address" class="flex-grow px-4 py-4 rounded-md bg-black/60 border border-gray-600">
+                    <button class="bg-red-600 px-8 py-4 rounded-md hover:bg-red-700 text-xl">
+                        Get Started
+                        <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <!-- Feature 1 -->
+            <div class="flex flex-col md:flex-row items-center justify-between mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-4">Enjoy on your TV</h2>
+                    <p class="text-xl">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+                <!-- <div class="md:w-1/2">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV" class="w-full">
+                </div> -->
+                <div class="md:w-1/2 relative overflow-hidden">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" 
+                         alt="TV" class="w-full z-10 relative">
+                
+                    <video class="absolute top-[21%] left-[13.5%] w-[73%] h-[55%] z-0 object-cover"
+                           autoplay muted loop playsinline>
+                        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center justify-between mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-4">Download your shows to watch offline</h2>
+                    <p class="text-xl">Save your favourites easily and always have something to watch.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Mobile" class="w-full">
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-4xl font-bold mb-4">Watch everywhere</h2>
+                    <p class="text-xl">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="Devices" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4" id="faq-container">
+                <!-- FAQ items will be added dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-black text-gray-400">
+        <div class="container mx-auto px-4">
+            <p class="mb-6">Questions? Call 1-844-505-2993</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Investor Relations</a></li>
+                    <li><a href="#" class="hover:underline">Privacy</a></li>
+                    <li><a href="#" class="hover:underline">Speed Test</a></li>
+                </ul>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Help Centre</a></li>
+                    <li><a href="#" class="hover:underline">Jobs</a></li>
+                    <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
+                    <li><a href="#" class="hover:underline">Legal Notices</a></li>
+                </ul>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Account</a></li>
+                    <li><a href="#" class="hover:underline">Ways to Watch</a></li>
+                    <li><a href="#" class="hover:underline">Corporate Information</a></li>
+                    <li><a href="#" class="hover:underline">Only on Netflix</a></li>
+                </ul>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Media Centre</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
