@@ -1,1 +1,1 @@
-##Netflix Landing Page using HTML, Tailwind CSS and JavaScript
+Netflix Landing Page using HTML, Tailwind CSS and JavaScript
